@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Certification Details</title>
+    <link rel="stylesheet" href="details.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <form class="example" action="/action_page.php" style="max-width: 300px">
+      <input type="text" placeholder="Search" name="search2" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <div class="container">
+      <h1>CERTIFICATION DETAILS</h1>
+      <form name="detais" id="sub" class="Certification-details">
+        <table width="100%">
+          <tr>
+            <td><label for="name">Employee Name:</label></td>
+            <td>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Employee name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="CSP">CSP : </label>
+              <select id="drop" required>
+                <option value="AWS">AWS</option>
+                <option value="Azure">Azure</option>
+                <option value="GCP">GCP</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="name">Certification Level:</label></td>
+            <td><input type="text" name="ct_level" required /></td>
+          </tr>
+          <tr>
+            <td><label for="name">Certification Name:</label></td>
+            <td><input type="text" name="ct_name" required /></td>
+          </tr>
+          <tr>
+            <td><label>Certification Id :</label></td>
+            <td>
+              <input
+                type="text"
+                name="ct_id"
+                class="field"
+                pattern="[a-zA-Z0-9]+"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="Date">Date Of Certification :</label></td>
+            <td><input type="Date" name="date" size="100px" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="Date">Expiry Date Of Certification :</label></td>
+            <td><input type="Date" name="exp_date" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="Validity">Validity :</label></td>
+            <td>
+              <input type="number" name="Validity" id="Validity" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" class="submit" value="Cancel" width="50%" />
+            </td>
+            <td>
+              <input type="submit" class="submit" value="Submit" width="50%" />
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">
+              <input
+                type="button"
+                id="logout"
+                class="logout"
+                value="Logout"
+                width="50%"
+              />
+            </th>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script type="module" src="certificate.js"></script>
+  </body>
+</html>
